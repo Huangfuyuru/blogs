@@ -1,0 +1,22 @@
+{
+  "name": "blogs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xiaweixuan/blogs.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/xiaweixuan/blogs/issues"
+  },
+  "homepage": "https://github.com/xiaweixuan/blogs#readme",
+  "devDependencies": {
+    "gitbook-cli": "^2.3.2"
+  }
+}

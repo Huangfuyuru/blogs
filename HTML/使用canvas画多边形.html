@@ -1,0 +1,935 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>使用canvas画多边形 · 夏炜轩的笔记</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="夏炜轩">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-code/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search-pro/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-donate/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-toggle-chapters/toggle.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-multipart/multipart.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-ancre-navigation/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-chapter-fold/chapter-fold.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-advanced-emoji/emoji-website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-page-toc-button/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-pageview-count/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-back-to-top-button/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-bsz/bsz.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../assets/styles/website.css">
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../git/git版本回溯.html" />
+    
+    
+    <link rel="prev" href="../css/sass介绍与使用方法.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="http://xiawx.top" target="_blank" class="custom-link">首页</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">js笔记</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="../js/nodejs笔记总结.html">
+            
+                <a href="../js/nodejs笔记总结.html">
+            
+                    
+                    nodejs笔记总结
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="../js/js异步编程.html">
+            
+                <a href="../js/js异步编程.html">
+            
+                    
+                    js异步编程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="../js/js模块化.html">
+            
+                <a href="../js/js模块化.html">
+            
+                    
+                    js模块化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="../js/对于js事件的解析.html">
+            
+                <a href="../js/对于js事件的解析.html">
+            
+                    
+                    对于js事件的解析
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="../js/ts笔记.html">
+            
+                <a href="../js/ts笔记.html">
+            
+                    
+                    ts笔记
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6" data-path="../js/ES6.html">
+            
+                <a href="../js/ES6.html">
+            
+                    
+                    ES6
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7" data-path="../js/js函数高阶应用.html">
+            
+                <a href="../js/js函数高阶应用.html">
+            
+                    
+                    js函数高阶应用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.8" data-path="../js/js常用api总结.html">
+            
+                <a href="../js/js常用api总结.html">
+            
+                    
+                    js常用api总结
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.9" data-path="../js/babel.html">
+            
+                <a href="../js/babel.html">
+            
+                    
+                    babel
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.10" data-path="../js/常见方法封装.html">
+            
+                <a href="../js/常见方法封装.html">
+            
+                    
+                    常见方法封装
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">css笔记</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="../css/css布局.html">
+            
+                <a href="../css/css布局.html">
+            
+                    
+                    css布局
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="../css/sass介绍与使用方法.html">
+            
+                <a href="../css/sass介绍与使用方法.html">
+            
+                    
+                    sass介绍与使用方法
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">html笔记</li>
+        
+        
+    
+        <li class="chapter active" data-level="4.1" data-path="使用canvas画多边形.html">
+            
+                <a href="使用canvas画多边形.html">
+            
+                    
+                    使用canvas画多边形
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">git笔记</li>
+        
+        
+    
+        <li class="chapter " data-level="5.1" data-path="../git/git版本回溯.html">
+            
+                <a href="../git/git版本回溯.html">
+            
+                    
+                    git版本回溯
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2" data-path="../git/更改git账号时无法上传文件.html">
+            
+                <a href="../git/更改git账号时无法上传文件.html">
+            
+                    
+                    更改git账号时无法上传文件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3" data-path="../git/如何使用git分支团队合作解决问题.html">
+            
+                <a href="../git/如何使用git分支团队合作解决问题.html">
+            
+                    
+                    如何使用git分支团队合作解决问题
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.4" data-path="../git/github仓库关联及常用命令.html">
+            
+                <a href="../git/github仓库关联及常用命令.html">
+            
+                    
+                    github仓库关联及常用命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">web前端笔记</li>
+        
+        
+    
+        <li class="chapter " data-level="6.1" data-path="../web前端/react复习总结.html">
+            
+                <a href="../web前端/react复习总结.html">
+            
+                    
+                    react复习总结
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.2" data-path="../web前端/vue复习总结.html">
+            
+                <a href="../web前端/vue复习总结.html">
+            
+                    
+                    vue复习总结
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.3" data-path="../web前端/angular复习总结.html">
+            
+                <a href="../web前端/angular复习总结.html">
+            
+                    
+                    angular复习总结
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.4" data-path="../web前端/webpack复习总结.html">
+            
+                <a href="../web前端/webpack复习总结.html">
+            
+                    
+                    webpack复习总结
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.5" data-path="../web前端/mvvm.html">
+            
+                <a href="../web前端/mvvm.html">
+            
+                    
+                    mvvm
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.6" data-path="../web前端/redux.html">
+            
+                <a href="../web前端/redux.html">
+            
+                    
+                    redux
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.7" data-path="../web前端/http.html">
+            
+                <a href="../web前端/http.html">
+            
+                    
+                    http
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.8" data-path="../web前端/vue常见插件.html">
+            
+                <a href="../web前端/vue常见插件.html">
+            
+                    
+                    vue常见插件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.9" data-path="../web前端/reactNative.html">
+            
+                <a href="../web前端/reactNative.html">
+            
+                    
+                    reactNative
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.10" data-path="../web前端/spa富应用开发.html">
+            
+                <a href="../web前端/spa富应用开发.html">
+            
+                    
+                    spa富应用开发
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.11" data-path="../web前端/内存控制.html">
+            
+                <a href="../web前端/内存控制.html">
+            
+                    
+                    内存控制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.12" data-path="../web前端/web前端常见问题.html">
+            
+                <a href="../web前端/web前端常见问题.html">
+            
+                    
+                    web前端常见问题
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.13" data-path="../web前端/常见组件设计.html">
+            
+                <a href="../web前端/常见组件设计.html">
+            
+                    
+                    常见组件设计
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.14" data-path="../web前端/前端面试复习.html">
+            
+                <a href="../web前端/前端面试复习.html">
+            
+                    
+                    前端面试复习
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.15" data-path="../web前端/开源项目流程.html">
+            
+                <a href="../web前端/开源项目流程.html">
+            
+                    
+                    开源项目流程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.16" data-path="../web前端/前端常见特效原理.html">
+            
+                <a href="../web前端/前端常见特效原理.html">
+            
+                    
+                    前端常见特效原理
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">服务端笔记</li>
+        
+        
+    
+        <li class="chapter " data-level="7.1" data-path="../服务端/windows如何安装mysql.html">
+            
+                <a href="../服务端/windows如何安装mysql.html">
+            
+                    
+                    windows如何安装mysql
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">小程序笔记</li>
+        
+        
+    
+        <li class="chapter " data-level="8.1" data-path="../小程序/小程序开发如何使用colorUI框架.html">
+            
+                <a href="../小程序/小程序开发如何使用colorUI框架.html">
+            
+                    
+                    小程序开发如何使用colorUI框架
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">计算机基础</li>
+        
+        
+    
+        <li class="chapter " data-level="9.1" data-path="../计算机基础/os.html">
+            
+                <a href="../计算机基础/os.html">
+            
+                    
+                    os
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >使用canvas画多边形</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h2 id="&#x4F7F;&#x7528;canvas&#x753B;&#x4E09;&#x89D2;&#x5F62;&#x3001;&#x591A;&#x8FB9;&#x5F62;&#x3001;&#x4E94;&#x89D2;&#x661F;"><a name="&#x4F7F;&#x7528;canvas&#x753B;&#x4E09;&#x89D2;&#x5F62;&#x3001;&#x591A;&#x8FB9;&#x5F62;&#x3001;&#x4E94;&#x89D2;&#x661F;" class="anchor-navigation-ex-anchor" href="#&#x4F7F;&#x7528;canvas&#x753B;&#x4E09;&#x89D2;&#x5F62;&#x3001;&#x591A;&#x8FB9;&#x5F62;&#x3001;&#x4E94;&#x89D2;&#x661F;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x4F7F;&#x7528;canvas&#x753B;&#x4E09;&#x89D2;&#x5F62;&#x3001;&#x591A;&#x8FB9;&#x5F62;&#x3001;&#x4E94;&#x89D2;&#x661F;</h2>
+<pre><code class="lang-javascript">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+
+&lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot;&gt;
+    &lt;title&gt;&lt;/title&gt;
+    &lt;style&gt;
+        canvas {
+            border: 1px solid red;
+        }
+    &lt;/style&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+    &lt;canvas id=&quot;canvas&quot;&gt;&#x4F60;&#x7684;&#x6D4F;&#x89C8;&#x5668;&#x4E0D;&#x652F;&#x6301;canvas&lt;/canvas&gt;
+
+&lt;/body&gt;
+&lt;script&gt;
+    (function () {
+        CanvasRenderingContext2D.prototype.triangle = function (x1, y1, x2, y2, x3, y3) {
+            this.moveTo(x1, y1);
+            this.lineTo(x2, y2);
+            this.lineTo(x3, y3);
+            this.closePath();
+            this.stroke();
+            // console.log(this);
+        };
+        CanvasRenderingContext2D.prototype.polygon = function (x, y, r, n) {
+            //&#x8865;&#x5168;&#x4EE3;&#x7801;&#x5B9E;&#x73B0;&#x591A;&#x8FB9;&#x5F62;&#x7684;&#x7ED8;&#x5236;
+            //&#x5176;&#x4E2D;x&#x4E3A;&#x4E2D;&#x5FC3;&#x70B9;x&#x5750;&#x6807;&#xFF0C;y&#x4E3A;&#x4E2D;&#x5FC3;&#x70B9;y&#x5750;&#x6807;&#xFF0C;r&#x4E3A;&#x534A;&#x5F84;&#xFF0C;n&#x4E3A;&#x591A;&#x8FB9;&#x5F62;&#x8FB9;&#x7684;&#x6570;&#x91CF;
+
+            var XCoordinate = [];//&#x5B58;&#x50A8;&#x6240;&#x6709;&#x70B9;&#x7684;x&#x5750;&#x6807;
+            var YCoordinate = [];//&#x5B58;&#x50A8;&#x6240;&#x6709;&#x70B9;&#x7684;y&#x5750;&#x6807;
+            var xc1,xc2;
+
+            this.beginPath();
+            for (let i = 0; i &lt; n; i++) {
+                xc = x + Math.cos((2 * i * Math.PI) / n) * r;
+                // console.log(xc);
+                XCoordinate.push(xc);
+                yc = y + Math.sin((2 * i * Math.PI) / n) * r;
+                // console.log(yc);
+                YCoordinate.push(yc);
+            }
+            for (let i = 0; i &lt; n; i++) {
+                this.lineTo(XCoordinate[i], YCoordinate[i]);
+            }
+            context.strokeStyle = &apos;black&apos;;
+            this.stroke();
+            this.closePath();
+            this.stroke();//&#x5C01;&#x53E3;
+
+
+        };
+        CanvasRenderingContext2D.prototype.star = function (x, y, r, R) {
+            //&#x8865;&#x5168;&#x4EE3;&#x7801;&#x5B9E;&#x73B0;&#x4E94;&#x89D2;&#x661F;&#x7684;&#x7ED8;&#x5236;,&#x8981;&#x6C42;&#x586B;&#x5145;&#x989C;&#x8272;&#x4E3A;&#x9EC4;&#x8272;&#xFF0C;&#x5916;&#x63CF;&#x8FB9;&#x4E3A;&#x7EA2;&#x8272;
+            //&#x5176;&#x4E2D;x&#x4E3A;&#x4E2D;&#x5FC3;&#x70B9;x&#x5750;&#x6807;&#xFF0C;y&#x4E3A;&#x4E2D;&#x5FC3;&#x70B9;y&#x5750;&#x6807;&#xFF0C;r&#x4E3A;&#x4E94;&#x89D2;&#x661F;&#x5185;&#x5F84;&#xFF0C;R&#x4E3A;&#x4E94;&#x89D2;&#x661F;&#x5916;&#x5F84;
+            var XCoordinate = [];//&#x5B58;&#x50A8;&#x6240;&#x6709;&#x70B9;&#x7684;x&#x5750;&#x6807;
+            var YCoordinate = [];//&#x5B58;&#x50A8;&#x6240;&#x6709;&#x70B9;&#x7684;y&#x5750;&#x6807;
+            var XCoordinate0 = [];//&#x5B58;&#x50A8;&#x6240;&#x6709;&#x70B9;&#x7684;x&#x5750;&#x6807;
+            var YCoordinate0 = [];//&#x5B58;&#x50A8;&#x6240;&#x6709;&#x70B9;&#x7684;y&#x5750;&#x6807;
+            var n = 5;//&#x8BB0;&#x5F55;&#x5355;&#x4E2A;&#x56FE;&#x5F62;&#x70B9;&#x6570;
+            var xc1,xc2,yc1,yc2;
+
+
+            this.beginPath();
+            for (let i = 0; i &lt; n; i++) {
+                xc1 = x + Math.cos((2 * i * Math.PI) / n) * R;
+                xc2 = x + Math.cos((2 * i * Math.PI) / n +2*Math.PI/5/2) * r;
+                XCoordinate.push(xc1);
+                XCoordinate0.push(xc2);
+                yc1 = y + Math.sin((2 * i * Math.PI) / n) * R;
+                yc2 = y + Math.sin((2 * i * Math.PI) / n +2*Math.PI/5/2) * r;
+                YCoordinate.push(yc1);
+                YCoordinate0.push(yc2);
+                // console.log(xc1,yc1,xc2,yc2);
+            }
+            for (let i = 0; i &lt; n; i++) {
+                this.lineTo(XCoordinate[i], YCoordinate[i]);
+                this.lineTo(XCoordinate0[i], YCoordinate0[i]);
+            }
+            context.strokeStyle = &apos;black&apos;;
+            this.stroke();
+            this.closePath();
+            this.stroke();
+
+
+        };
+    })();
+
+    var canvas = document.getElementById(&apos;canvas&apos;);
+    var context = canvas.getContext(&apos;2d&apos;);
+
+    context.polygon(50, 50, 25, 7);   
+    context.star(95, 85, 20, 30);
+
+&lt;/script&gt;
+</code></pre>
+<p>&#x590D;&#x5236;&#x8BF7;&#x6539;&#x53D8;&#x91CF;~</p>
+<p><footer class="page-footer"><span class="page-footer-copyright">2018&#xA0;-&#xA0;<span class="bsz-this-year"></span>&#xA0;by&#xA0;<a href="https://note.xiawx.top" target="_blank">&#x590F;&#x709C;&#x8F69;</a>.&#xA0;All rights reserved.</span><span class="page-footer-footer-update"><span id="busuanzi_container_site_uv">&#x672C;&#x7AD9;&#x8BBF;&#x5BA2;&#x4EBA;&#x6570;&#xA0;<span id="busuanzi_value_site_uv"></span>&#xA0;&#x4EBA;&#x6B21;</span></span></footer><script>document.getElementsByClassName("bsz-this-year")[0].innerHTML = new Date().getFullYear(); </script><script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../css/sass介绍与使用方法.html" class="navigation navigation-prev " aria-label="Previous page: sass介绍与使用方法">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../git/git版本回溯.html" class="navigation navigation-next " aria-label="Next page: git版本回溯">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"使用canvas画多边形","level":"4.1","depth":1,"next":{"title":"git版本回溯","level":"5.1","depth":1,"path":"git/git版本回溯.md","ref":"git/git版本回溯.md","articles":[]},"previous":{"title":"sass介绍与使用方法","level":"3.2","depth":1,"path":"css/sass介绍与使用方法.md","ref":"css/sass介绍与使用方法.md","articles":[]},"dir":"ltr"},"config":{"plugins":["code","-search","search-pro","github","splitter","donate","-sharing","sharing-plus","-highlight","styles-less","toggle-chapters","multipart","ancre-navigation","chapter-fold","advanced-emoji","page-toc-button","pageview-count","back-to-top-button","bsz","toc"],"root":".","styles":{"website":"assets/styles/website.css"},"pluginsConfig":{"chapter-fold":{},"github":{"url":"https://github.com/xiaweixuan"},"styles-less":{},"splitter":{},"search-pro":{},"toc":{},"bsz":{"copyright":"2018&nbsp;-&nbsp;<span class=\"bsz-this-year\"></span>&nbsp;by&nbsp;<a href=\"https://note.xiawx.top\">夏炜轩</a>.&nbsp;All rights reserved."},"sharing-plus":{"qq":false,"all":["facebook","google","twitter","instapaper","linkedin","pocket","stumbleupon"],"douban":false,"facebook":true,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":true,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"multipart":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"code":{"copyButtons":true},"donate":{"alipay":"/assets/images/wxpay.png","alipayText":"另一个是也微信打赏","button":"赞赏","title":"","wechat":"/assets/images/wxpay.png","wechatText":"一个是微信打赏"},"fontsettings":{"theme":"white","family":"sans","size":2},"page-toc-button":{"maxTocDepth":2,"minTocSize":2},"back-to-top-button":{},"pageview-count":{},"ancre-navigation":{"associatedWithSummary":true,"float":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showLevel":true},"advanced-emoji":{"embedEmojis":false},"sharing":{"facebook":true,"twitter":true,"weibo":true,"qq":true,"all":["douban","google","qzone","linkedin"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"toggle-chapters":{}},"theme":"default","author":"夏炜轩","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"夏炜轩的笔记","language":"zh-hans","output.name":"site","links":{"sidebar":{"首页":"http://xiawx.top"}},"gitbook":"3.2.3","description":"夏炜轩的笔记"},"file":{"path":"HTML/使用canvas画多边形.md","mtime":"2020-08-13T06:33:39.845Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-08-13T06:35:47.377Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-code/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-pro/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-donate/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing-plus/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-toggle-chapters/toggle.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-chapter-fold/chapter-fold.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-page-toc-button/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-pageview-count/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-back-to-top-button/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
